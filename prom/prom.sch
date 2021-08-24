@@ -1,0 +1,158 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Logic_Programmable:GAL16V8 U2
+U 1 1 60F30F2F
+P 5600 3900
+F 0 "U2" H 5600 4781 50  0000 C CNN
+F 1 "GAL16V8" H 5600 4690 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 5600 3900 50  0001 C CNN
+F 3 "" H 5600 3900 50  0001 C CNN
+	1    5600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L parts:74S288 U1
+U 1 1 60F4291E
+P 7400 3300
+F 0 "U1" H 7250 3425 50  0000 C CNN
+F 1 "74S288" H 7250 3334 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 7250 3400 50  0001 C CNN
+F 3 "" H 7400 3300 50  0001 C CNN
+	1    7400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 60F4A6A6
+P 6800 4850
+F 0 "#PWR0101" H 6800 4600 50  0001 C CNN
+F 1 "GND" H 6805 4677 50  0000 C CNN
+F 2 "" H 6800 4850 50  0001 C CNN
+F 3 "" H 6800 4850 50  0001 C CNN
+	1    6800 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4600 5600 4800
+Wire Wire Line
+	6100 3400 6950 3400
+Wire Wire Line
+	6100 3500 6950 3500
+Wire Wire Line
+	6100 3600 6950 3600
+Wire Wire Line
+	6100 3700 6950 3700
+Wire Wire Line
+	6100 3800 6950 3800
+Wire Wire Line
+	6100 3900 6950 3900
+Wire Wire Line
+	6100 4000 6950 4000
+Wire Wire Line
+	6450 4100 6450 4400
+Wire Wire Line
+	6450 4400 7800 4400
+Wire Wire Line
+	7800 4400 7800 4100
+Wire Wire Line
+	7800 4100 7550 4100
+Wire Wire Line
+	6100 4100 6450 4100
+Wire Wire Line
+	6800 4850 6800 4800
+Wire Wire Line
+	5600 4800 6800 4800
+Wire Wire Line
+	6800 4800 6800 4100
+Wire Wire Line
+	6800 4100 6950 4100
+Connection ~ 6800 4800
+$Comp
+L power:+5V #PWR0102
+U 1 1 60F51E69
+P 8300 3150
+F 0 "#PWR0102" H 8300 3000 50  0001 C CNN
+F 1 "+5V" H 8315 3323 50  0000 C CNN
+F 2 "" H 8300 3150 50  0001 C CNN
+F 3 "" H 8300 3150 50  0001 C CNN
+	1    8300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3150 8300 3400
+Wire Wire Line
+	8300 3400 7700 3400
+Wire Wire Line
+	7550 3600 7800 3600
+Wire Wire Line
+	7800 3600 7800 3150
+Wire Wire Line
+	7800 3150 4800 3150
+Wire Wire Line
+	4800 3150 4800 3500
+Wire Wire Line
+	4800 3500 5100 3500
+Wire Wire Line
+	5100 3600 4700 3600
+Wire Wire Line
+	4700 3600 4700 3050
+Wire Wire Line
+	4700 3050 7900 3050
+Wire Wire Line
+	7900 3050 7900 3700
+Wire Wire Line
+	7900 3700 7550 3700
+Wire Wire Line
+	5100 3700 4600 3700
+Wire Wire Line
+	4600 3700 4600 2950
+Wire Wire Line
+	4600 2950 8000 2950
+Wire Wire Line
+	8000 2950 8000 3800
+Wire Wire Line
+	8000 3800 7550 3800
+Wire Wire Line
+	5100 3800 4500 3800
+Wire Wire Line
+	4500 3800 4500 2850
+Wire Wire Line
+	4500 2850 8100 2850
+Wire Wire Line
+	8100 2850 8100 3900
+Wire Wire Line
+	8100 3900 7550 3900
+Wire Wire Line
+	5100 3900 4400 3900
+Wire Wire Line
+	4400 3900 4400 2750
+Wire Wire Line
+	4400 2750 8200 2750
+Wire Wire Line
+	8200 2750 8200 4000
+Wire Wire Line
+	8200 4000 7550 4000
+Wire Wire Line
+	5600 3200 5600 2550
+Wire Wire Line
+	5600 2550 7700 2550
+Wire Wire Line
+	7700 2550 7700 3400
+Connection ~ 7700 3400
+Wire Wire Line
+	7700 3400 7550 3400
+$EndSCHEMATC

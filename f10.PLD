@@ -1,0 +1,95 @@
+Name f10 ;
+PartNo   00 ;
+Date     2021-06-19 ;
+Revision 01 ;
+Designer Engineer ;
+Company  . ;
+Assembly None ;
+Location  ;
+Device   G16V8 ;
+
+/* *************** INPUT PINS *********************/
+PIN  2   = A4;
+PIN  3   = A3;
+PIN  4   = A2; 
+PIN  5   = A1; 
+PIN  6   = A0; 
+/* PIN  8   = G; */
+
+/* *************** OUTPUT PINS *********************/
+PIN  12   = D7;
+PIN  13   = D6;
+PIN  14   = D5;
+PIN  15   = D4;
+PIN  16   = D3;
+PIN  17   = D2;
+PIN  18   = D1;
+PIN  19   = D0;
+
+
+!D0 =
+    !A0 & !A1
+  # !A0 & A2 & A3
+  # A0 & A1 & A2 & A4
+  # A1 & A2 & A3 & A4
+  # !A1 & !A2 & A3
+  # !A0 & !A2 & !A3 & A4;
+
+!D1 =
+    !A0 & !A1
+  # !A0 & !A2 & A3 & A4
+  # A1 & !A2 & A3 & A4
+  # A0 & A2 & !A3 & A4
+  # !A1 & A2 & !A3 & A4
+  # !A0 & !A3 & !A4
+  # A1 & !A2 & !A3 & !A4
+  # A0 & A1 & A2 & A3 & !A4;
+
+D2 =
+    A0 & !A1 & !A3 & !A4
+  # !A0 & A1 & A2 & !A3
+  # A1 & !A2 & A3 & !A4
+  # A0 & !A1 & A2 & A3
+  # A0 & !A2 & !A3 & A4
+  # A0 & !A1 & A2 & !A3 & A4
+  # !A0 & A1 & A3 & A4;
+
+D3 =
+    A0 & A1 & !A2 & !A4
+  # A0 & A1 & A2 & A3
+  # A0 & !A1 & !A2 & !A3 & A4
+  # !A0 & A1 & !A2 & !A3 & A4
+  # A0 & A1 & A2 & !A3 & A4
+  # A0 & A1 & !A2 & A3 & A4
+  # A0 & !A1 & A2 & A3 & A4;
+
+!D4 =
+    !A0 & !A1
+  # A0 & !A2 & A3 & A4
+  # !A1 & !A2 & A3 & A4
+  # !A0 & A2 & !A3
+  # !A1 & A2 & !A4;
+
+!D5 =
+    !A0 & !A1
+  # !A0 & !A2 & A4
+  # !A1 & !A2 & A4
+  # A0 & A1 & A2 & !A3 & !A4
+  # !A1 & !A3 & A4
+  # !A1 & !A2 & !A3;
+
+D6 =
+    A1 & !A2 & !A3 & !A4
+  # !A0 & A1 & A3
+  # A0 & A1 & A2 & A3
+  # A0 & A1 & !A2 & A4
+  # A0 & !A1 & A3 & A4;
+
+D7 =
+    A0 & !A2 & !A3 & !A4
+  # !A0 & A1 & A2 & !A3 & !A4
+  # A0 & A2 & A3 & !A4
+  # !A0 & A1 & !A2 & !A3 & A4
+  # A0 & !A1 & !A2 & A3 & A4;
+
+
